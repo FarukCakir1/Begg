@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    font-family: 'Source Serif 4', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    background: #E0EEA5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    font-size: 2.5rem;
+}
+
+.title p{
+    font-size: 1.3rem;
+}
+
+.input-section{
+    width: 25vw;
+    position: relative;
+    margin: 3rem 0;
+}
+
+.input-section input{
+    width: 100%;
+    padding: .3rem .5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-section .search-btn{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    border: none;
+    background: transparent;
+}
+
+.results{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.results .city-name{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.results .pictures{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.results .image{
+    width: 600px;
+    height: 400px;
+    margin: .7rem .7rem;
+}
+
+.results .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.largeimg-container{
+    background: rgba(0, 0, 0, 0.356);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.largeimg{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.largeimg .close-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.largeimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+.places-list{
+    width: 45vw;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 1rem;
+    list-style-type: none;
+   
+}
+
+.place-li{
+    margin: 1rem 1rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .3rem .5rem;
+    
+}
+
+.place-li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}

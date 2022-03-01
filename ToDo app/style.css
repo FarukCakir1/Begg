@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+}
+
+.container{
+    width: 70vw;
+    min-height: 100vh;
+    margin: auto;
+    background: #91F8D0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container h2{
+    color: rgba(65, 64, 64, 0.301);
+    margin-bottom: 1rem;
+}
+
+.todo-input{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 3rem 0;
+}
+
+.add{
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.input{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: .7rem;
+}
+
+.todo-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.todos{
+    width: 60%;
+    list-style-type: none;
+}
+
+.todo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    padding: .4rem;
+    margin: 1rem 0; 
+    border-radius: 10px;
+}
+
+.todo-title{
+    margin-left: 20px;
+}
+
+.completed{
+    text-decoration:line-through;
+    color: rgba(136, 135, 135, 0.61);
+}
+
+.todo .icons{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.todo .icons i{
+    margin-left: 1rem;
+}
+
+.trash{
+    background-color: #FB1F1F;
+    padding: 1rem;
+    color: wheat;
+    border-radius: 50%;
+    transition: all 500ms;
+}
+
+.trash:hover{
+    background: white;
+    color: #FB1F1F;
+}
+
+.check{
+    background-color: #02FC22;
+    padding: 1rem;
+    color: wheat;
+    border-radius: 50%;
+    transition: all 500ms;
+}
+
+.check:hover{
+    background: white;
+    color: #02FC22;
+    font-weight: bolder;
+}
